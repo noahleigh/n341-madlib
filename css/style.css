@@ -78,17 +78,17 @@ h2{
 }
 
 h3{
-    font-size: 1.6em;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 ul{
-    float: left;
-    font-size: 1.8em;
+    float: inherit;
+    font-size: 18px;
 }
 
 ul, ol{
-    margin: 5px 0px 5px;
+    margin: 5px 0px 20px;
 }
 
 ul, ol, li{
@@ -96,12 +96,12 @@ ul, ol, li{
 }
 
 li {
-    line-height: 1.4em;
+    line-height: 28px;
     font-size: inherit;
 }
 
-p, label {
-    font-size: 1.8em;
+p, label, output{
+    font-size: 18px;
     line-height: 1.5em;
     margin-bottom: 10px;
 }

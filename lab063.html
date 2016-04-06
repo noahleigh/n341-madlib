@@ -1,0 +1,138 @@
+<!doctype html>
+<!--
+    Filename: lab063.html
+    Written by: Noah Leigh
+    Purpose: Madlib Final Project
+    Date: 2014-04-21
+    Modification History: Updated for GitHub
+    Last Modified: 2016-04-06
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="lab063Style.css" type="text/css">
+    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script src="lab063.js" type"text/javascript"></script>
+    
+    <title>Mad Lib Madness</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Mad Lib Madness</h1>
+        <h3><em>Validation performed with HTML 5 <code>&lt;input&gt;</code> types and pattern matching.</em></h3>
+        <h3><em>Let the cursor hover over the textfields to see the constraints.</em></h3>
+    </div>
+    <div id="main">
+        <div id="container">
+            <div class="section" id="left">
+                <div class="arrow" id="leftArrow">
+                    &#9664;
+                </div>
+                <div class="internal">
+                    <h1>Fill in the blanks <input type="button" value="Autofill" id="btnAutofill"></h1>
+                    
+                    <form action="submit" id="madlibInput">
+                        <fieldset name="story">
+                            <label for="story">Pick a Story</label>
+                            <!-- inputArray[0].value -->
+                            <fieldset class="radioContain"> 
+                                <label for="story">1</label>
+                                <input type="radio" name="story" class="radio" value="story1" checked="checked">
+                                <label for="story">2</label>
+                                <input type="radio" name="story" class="radio" value="story2">
+                                <!-- <label for="story">3</label>
+                                <input type="radio" name="story" class="radio" value="story3"> -->
+                            </fieldset>
+                        </fieldset>
+                        
+                        <fieldset name="name">
+                            <label for="name">Name</label>
+                            <div class="inputName">
+                                <!-- inputArray[1].value -->
+                                <input type="text" name="name" class="name" id="input1" placeholder="Bob" pattern="[a-zA-Z ]+" title="Type a name (no numbers)" required>
+                                <label for="gender">M</label>
+                                <!-- inputArray[2].value -->
+                                <input type="radio" name="gender1" class="radio" value="M" required>
+                                <label for="gender">F</label>
+                                <input type="radio" name="gender1" class="radio" value="F" required>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset name="location">
+                            <label for="location">Location</label>
+                            <!-- inputArray[3].value -->
+                            <input type="text" name="location" id="input3" placeholder="Cleaveland" title="Type a place" required>
+                        </fieldset>
+                        
+                        <fieldset name="name">
+                            <label for="name">Name</label>
+                            <div class="inputName">
+                                <!-- inputArray[4].value -->
+                                <input type="text" name="name" class="name" id="input4" placeholder="Jane" pattern="[a-zA-Z ]+" title="Type a name (no numbers)" required>
+                                <label for="gender">M</label>
+                                <!-- inputArray[5].value -->
+                                <input type="radio" name="gender2" class="radio" value="M" required>
+                                <label for="gender">F</label>
+                                <input type="radio" name="gender2" class="radio" value="F" required>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset name="number">
+                            <label for="number">Number</label>
+                            <!-- inputArray[6].value -->
+                            <input type="number" name="number" id="input6" placeholder="4" min="0" title="Type or choose an non-negative integer" required>
+                        </fieldset>
+                        
+                        <fieldset name="adjective">
+                            <label for="adjective">Adjective</label>
+                            <!-- inputArray[7].value -->
+                            <input type="text" name="adjective" id="input7" placeholder="worm-ridden" pattern="[a-zA-Z ]+" title="Type an adjective (no numbers)" required>
+                        </fieldset>
+                        
+                        <fieldset name="activity">
+                            <label for="activity">Activity</label>
+                            <!-- inputArray[8].value -->
+                            <input type="text" name="activity" id="input8" placeholder="playing volleyball" title="Type an activity" required>
+                        </fieldset>
+                        
+                        <fieldset name="food">
+                            <label for="food">Favorite Food</label>
+                            <!-- inputArray[9].value -->
+                            <input type="text" name="food" id="input9" placeholder="pizza" title="Type your favorite food (no numbers)" pattern="[a-zA-Z ]+" required>
+                        </fieldset>
+                        
+                        <fieldset name="planet">
+                            <label for="planet">Name of a Planet</label>
+                            <!-- inputArray[10].value -->
+                            <input type="text" name="planet" id="input10" placeholder="Tau Ceti IV" title="Type the name of a planet" required>
+                        </fieldset>
+                        
+                        <fieldset name="formButtons" id="formButtons">
+                            <input type="reset" id="reset" value="Reset Forms">
+                            <input type="submit" id="submit" value="Create Story">
+                        </fieldset>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="section" id="right">
+                <div class="arrow" id="rightArrow">
+                    &#9654;
+                </div>
+                <div class="internal">
+                    <h1>Output</h1>
+                    <output></output>
+                    <em>Click on the red bar or press the <code>ENTER</code> key to return and try a different story.</em>
+                </div>
+                
+            </div>
+        </div>
+        <!-- <div id="buttons">
+            <button id="btnLeft">Show Left</button>
+            <button id="btnRight">Show Right</button>
+        </div> -->
+    </div>
+</body>
+</html>

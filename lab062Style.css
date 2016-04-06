@@ -1,0 +1,28 @@
+#form fieldset:not(#formButtons){
+    display:block;
+    border: 1px inset lightgray;
+    margin: 0 0 10px 0;
+    padding: 5px;
+}
+#form input{
+    float: right;
+    width: 200px;
+}
+#form input.radio, input#checkbox, input#submit, input#reset {
+    width: inherit;
+}
+#range, #button{
+    margin: 0px;
+    padding: 0px;
+}
+.label.textArea{
+    display: block;
+}
+output{
+    float: right;
+    margin: 0 5px;
+    font-size: 1.6em;
+}
+#formButtons{
+    margin-bottom: 20px;
+}

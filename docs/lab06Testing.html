@@ -1,0 +1,62 @@
+<!doctype html>
+<!--
+    Filename: lab06Testing.html
+    Written by: Noah Leigh
+    Purpose: Madlib Final Project Testing
+    Date: 2014-04-28
+    Modification History: Updated for GitHub
+    Last Modified: 2016-04-06
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6: jQuery Mad Lib Testing</title>
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="lab06Style.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    
+</head>
+<body>
+    <div id="header">
+        <h1>Lab 6: jQuery Mad Lib Testing</h1>
+        <h3><em><a href="lab063.html">See the Mad Lib in action.</a></em></h3>
+    </div>
+    <div id="main">
+        <ul>
+            <li><strong>Valid Input</strong>
+            <ol>
+                <li>
+                    <p>Every input on the page is has the <code>required</code> attribute, so the form will not submit unless every input has been filled.</p>
+                </li>
+                <li>
+                    <p>The forms use <code>type</code> and <code>pattern</code> attributes to perform validation. For the <code>name</code>, <code>adjective</code>, and <code>food</code>, I used <code>pattern="[a-zA-Z ]+"</code> to only allow letters and spaces in the input.</p>
+                </li>
+                <li>
+                    <p>If the user tries to submit the form without properly matching input, the incorrect input forms will highlight red and a message will appear underneath describing the requirements.</p>
+                </li>
+                <li>
+                    <p>After testing, the validation works as described.</p>
+                </li>
+            </ol>
+            <li><strong>User Interface Elements</strong>
+            <ol>
+                <li>
+                    <p>Clicking on the <strong>Create Story</strong> button scrapes the form and concatenates a string with it based on the user selections, then slides over to the right where the output is displayed.</p>
+                </li>
+                <li>
+                    <p>Clicking on the <strong>Reset Forms</strong> button presents the user with a modal dialogue to confirm whether or not they wish to erase all their hard work. 
+                    <p>Clicking <strong>OK</strong> will close the dialogue and all the forms will be cleared to their default settings.</p>
+                    <p>Clicking <strong>Cancel</strong> will close the dialogue and no changes will be made to the form.</p></p>
+                </li>
+                <li>
+                    <p>Once the output is displayed, clicking the <strong>red bar</strong> or hitting the <strong>Enter key</strong> will slide back over to the filled input, allowing the user to make changes to their inputs.</p>
+                </li>
+                <li>
+                    <p>After testing in Firefox, Chrome and Internet Explorer, the user interface behaves as described.</p>
+                </li>
+            </ol>
+        </ul>
+    </div>
+</body>
+</html>

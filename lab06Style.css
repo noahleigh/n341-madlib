@@ -1,4 +1,10 @@
-#formsContainer, #outputContainer {
-    text-align: center;
+p{
+    font-size: inherit;
+    margin: 0;
+}
+li{
     margin-bottom: 10px;
+}
+ol{
+    list-style: disc;
 }

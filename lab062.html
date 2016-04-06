@@ -1,0 +1,105 @@
+<!doctype html>
+<!--
+    Filename: lab062.html
+    Written by: Noah Leigh
+    Purpose: Madlib Getting Informed
+    Date: 2014-04-16
+    Modification History: Updated for GitHub
+    Last Modified: 2016-04-06
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MadLib Interim Version</title>
+    
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="lab062Style.css" type="text/css">
+    <link href="css/ui-lightness/jquery-ui-1.10.4.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    
+    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.10.4.js"></script>
+    <script src="lab062.js" type"text/javascript"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <h1>MadLib Interim Version</h1>
+        <h3><em>Press <code>F12</code> and open the web console to see the output.</em></h3>
+        <h3><em>An alternative to the HTML pattern validation is using the <a href="http://jqueryvalidation.org/documentation/">jQuery Validation Plugin</a>.</em></h3>
+    </div>
+    <div id="main">
+        <form action="submit" id="form">
+            
+            <fieldset name="text">
+                <label for="text">text</label>
+                <input type="text" id="text" placeholder="word" required>
+            </fieldset>
+            
+            <fieldset name="radio">
+            <label for="radio">radio buttons</label>
+                <input type="radio" name="radio" class="radio" id="radio1" checked>
+                <input type="radio" name="radio" class="radio" id="radio2">
+                <input type="radio" name="radio" class="radio" id="radio3">
+            </fieldset>
+            
+            <fieldset name="checkbox">
+                <label for="checkbox">checkbox</label>
+                <input type="checkbox" id="checkbox" required>
+            </fieldset>
+            
+            <fieldset name="email">
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="youare@iupui.edu" required>
+            </fieldset>
+            
+            <fieldset name="password">
+                <label for="password">password</label>
+                <input type="password" id="password" required>
+            </fieldset>
+            
+            <fieldset name="button">
+                <label for="button">button</label>
+                <input type="button" id="button" value="button">
+                <output for="button" name="counter" id="counter">0</output>
+            </fieldset>
+            
+            <fieldset name="tel">
+                <label for="tel">tel</label>
+                <input type="tel" id="tel" pattern="^[0-9]+$" x-moz-errormessage="Please enter a phone number (no letters)" placeholder="3175598475" required>
+            </fieldset>
+            
+            <fieldset name="number">
+            <label for="number">number (spinner)</label>
+            <input type="number" id="number" required>
+            </fieldset>
+            
+            <fieldset name="range">
+                <label for="range">range</label>
+                <input type="range" id="range" required value="0">
+            </fieldset>
+            
+            <fieldset name="date">
+                <label for="date">date</label>
+                <input type="date" id="date" placeholder="03/24/2015" required>
+            </fieldset>
+            
+            <fieldset name="autocomplete">
+                <label for="autocomplete">autocomplete</label>
+                <input type="autocomplete" id="autocomplete" placeholder="Colorado" required>
+            </fieldset>
+            
+            <fieldset name="textarea">
+                <label for="textarea" class="label textArea">textarea</label>
+                <textarea name="" id="textarea" cols="60" rows="10" placeholder="Lorem ipsum..."  required></textarea>
+            </fieldset>
+            
+            <fieldset name="formButtons" id="formButtons">
+                <input type="reset" id="reset">
+                <input type="submit" id="submit">
+            </fieldset>
+            
+        </form>
+    </div>
+</body>
+</html>
