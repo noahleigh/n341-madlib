@@ -70,7 +70,9 @@ function jQueryUI(){
         source: availableTags
     });
     // Makes the datepicker jQueryUI widget
-    $("#date").datepicker();
+    $("#date").datepicker({
+        dateFormat: "yy-mm-dd"
+    });
 };
 
 // Run on form submission.
