@@ -26,3 +26,6 @@ output{
 #formButtons{
     margin-bottom: 20px;
 }
+input::-webkit-calendar-picker-indicator{
+    display: none;
+}
